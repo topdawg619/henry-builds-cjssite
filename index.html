@@ -83,6 +83,20 @@
                 <p class="text-3xl font-semibold text-white">100%</p>
               </div>
             </div>
+            <div class="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <span class="text-xl text-accent">★</span>
+                <span>4.9 Google · 57 public reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/30 text-[0.65rem]">COI</span>
+                <span>HOA & fleet insured</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/30 text-[0.65rem]">24h</span>
+                <span>Rain-check guarantee</span>
+              </div>
+            </div>
           </div>
           <div class="rounded-3xl border border-white/10 bg-slateglass p-6 backdrop-blur">
             <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Signature Process</p>
@@ -141,8 +155,16 @@
           <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Packages</p>
           <h2 class="mt-3 text-3xl font-semibold text-white">Choose the level that fits your drive.</h2>
           <p class="mt-4 text-lg text-slate-300">
-            Pricing flexes by vehicle size. Use the estimator below or text us photos for a concierge quote.
+            Pricing flexes by vehicle size. Use the toggle to see one-time vs. maintenance member rates or text us photos for a concierge quote.
           </p>
+        </div>
+        <div class="mt-8 flex flex-col items-center gap-3 text-xs uppercase tracking-[0.3em] text-slate-400">
+          <p>Billing preference</p>
+          <div class="inline-flex rounded-full border border-white/10 p-1">
+            <button data-price-mode="standard" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-accent text-white shadow-glow">One-time service</button>
+            <button data-price-mode="member" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-transparent text-slate-300">Maintenance member (‑15%)</button>
+          </div>
+          <p class="text-[0.7rem] text-slate-500">Members lock pricing + priority scheduling. Pricing shown per visit.</p>
         </div>
         <div class="mt-12 overflow-hidden rounded-3xl border border-white/10">
           <table class="min-w-full text-left text-sm text-slate-200">
@@ -158,26 +180,26 @@
               <tr>
                 <td class="px-4 py-6 font-semibold text-white">Signature Full Detail</td>
                 <td class="px-4 py-6 text-slate-300">Steam interior reset, hot water extraction, clay + iron decon, 6-mo sealant, wheels/tires, glass.</td>
-                <td class="px-4 py-6 text-white font-medium">$320</td>
-                <td class="px-4 py-6 text-white font-medium">$380</td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="signature" data-size="sedan">$320</span></td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="signature" data-size="suv">$380</span></td>
               </tr>
               <tr>
                 <td class="px-4 py-6 font-semibold text-white">Interior Renewal</td>
                 <td class="px-4 py-6 text-slate-300">Deep vacuum, stain treatment, steam plastics, leather reconditioning, ozone deodorize (optional).</td>
-                <td class="px-4 py-6 text-white font-medium">$210</td>
-                <td class="px-4 py-6 text-white font-medium">$260</td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="interior" data-size="sedan">$210</span></td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="interior" data-size="suv">$260</span></td>
               </tr>
               <tr>
                 <td class="px-4 py-6 font-semibold text-white">Exterior Protection</td>
                 <td class="px-4 py-6 text-slate-300">Two-bucket wash, clay mitt, single-stage polish, 6-mo ceramic spray, trim & tire dressing.</td>
-                <td class="px-4 py-6 text-white font-medium">$190</td>
-                <td class="px-4 py-6 text-white font-medium">$240</td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="exterior" data-size="sedan">$190</span></td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="exterior" data-size="suv">$240</span></td>
               </tr>
               <tr>
                 <td class="px-4 py-6 font-semibold text-white">Ceramic + Correction</td>
                 <td class="px-4 py-6 text-slate-300">Two-step correction, SB3 Alpha 2-year coating, glass + wheel coating add-on, maintenance kit.</td>
-                <td class="px-4 py-6 text-white font-medium">$950</td>
-                <td class="px-4 py-6 text-white font-medium">$1,150</td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="ceramic" data-size="sedan">$950</span></td>
+                <td class="px-4 py-6 text-white font-medium"><span data-package="ceramic" data-size="suv">$1,150</span></td>
               </tr>
             </tbody>
           </table>
@@ -225,6 +247,67 @@
               <li>Interior disinfect + mats</li>
             </ul>
             <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Apply</a>
+          </article>
+        </div>
+        <div class="mt-16 grid gap-10 lg:grid-cols-[60%_auto]">
+          <div class="rounded-3xl border border-white/10 bg-slateglass p-8">
+            <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Membership timeline</p>
+            <h3 class="mt-3 text-2xl font-semibold text-white">What happens after you join</h3>
+            <ul class="timeline mt-8 space-y-8 text-sm text-slate-200">
+              <li>
+                <h4 class="text-white font-semibold">Week 1 · Baseline Reset</h4>
+                <p>Signature full detail + paint inspection, interior health checklist, product recommendations.</p>
+              </li>
+              <li>
+                <h4 class="text-white font-semibold">Month 1 · Dialed Maintenance</h4>
+                <p>Maintenance wash + interior renewal, aftercare guide, note any warranty items.</p>
+              </li>
+              <li>
+                <h4 class="text-white font-semibold">Quarterly · Protection Boost</h4>
+                <p>Sealant top-off or ceramic inspection, ozone treatment optional, tire & trim reconditioning.</p>
+              </li>
+              <li>
+                <h4 class="text-white font-semibold">Semi-Annual · Upgrade Slot</h4>
+                <p>Priority window for paint correction, coating upgrade, or fleet add-ons.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-black/80 p-8">
+            <p class="text-xs uppercase tracking-[0.4em] text-slate-400">How to join</p>
+            <ol class="mt-4 space-y-4 text-sm text-slate-200">
+              <li><span class="text-accent font-semibold">1.</span> Complete the booking form with "Membership" in the notes.</li>
+              <li><span class="text-accent font-semibold">2.</span> We confirm availability + send a digital agreement.</li>
+              <li><span class="text-accent font-semibold">3.</span> Baseline reset scheduled, then your cadence locks in.</li>
+            </ol>
+            <p class="mt-6 text-xs text-slate-500">Memberships require an active card on file & 30-day notice to pause.</p>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Start the conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Questions</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Everything clients ask before booking.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <article class="rounded-3xl border border-white/10 bg-slateglass p-6">
+            <h3 class="text-lg font-semibold text-white">Do you need my power or water?</h3>
+            <p class="mt-3 text-sm text-slate-300">No. Vans carry filtered water, power, lighting, and reclaim mats. Let us know if your HOA has special requirements and we’ll send documentation.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-slateglass p-6">
+            <h3 class="text-lg font-semibold text-white">What about rain or marine layer?</h3>
+            <p class="mt-3 text-sm text-slate-300">We monitor Doppler + coastal humidity. If weather won’t let coatings cure, we reschedule within 24 hours at no charge.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-slateglass p-6">
+            <h3 class="text-lg font-semibold text-white">Can you work in garages or lots?</h3>
+            <p class="mt-3 text-sm text-slate-300">Yes—office garages, school lots, booster club fundraisers, and dealership overflow are common. We’ll bring mats + cones for tidy setups.</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-slateglass p-6">
+            <h3 class="text-lg font-semibold text-white">Do you offer fleet or athletic pricing?</h3>
+            <p class="mt-3 text-sm text-slate-300">Fleet, coaching staffs, and booster organizations get tiered pricing + consolidated billing. Mention it in the form and we’ll set it up.</p>
           </article>
         </div>
       </div>
@@ -325,6 +408,10 @@
           </div>
         </div>
         <form class="space-y-5 rounded-3xl border border-white/10 bg-zinc-950/80 p-8" id="bookingForm">
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span>Step 1 of 2 · Request</span>
+            <span>Avg reply 15 min</span>
+          </div>
           <label class="block text-sm font-medium text-slate-300">
             Name
             <input type="text" name="name" required placeholder="Full name" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
@@ -332,6 +419,7 @@
           <label class="block text-sm font-medium text-slate-300">
             Mobile number
             <input type="tel" name="phone" required placeholder="(619) 555-0123" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+            <span class="mt-1 block text-xs text-slate-500">We only text updates + ETA. No marketing blasts.</span>
           </label>
           <label class="block text-sm font-medium text-slate-300">
             Email
@@ -357,6 +445,14 @@
             Preferred date + address
             <textarea rows="3" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Example: Friday after 1pm · Eastlake, gated community & visitor parking"></textarea>
           </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Photos (optional)
+            <input type="file" accept="image/*" multiple class="mt-2 w-full rounded-2xl border border-dashed border-white/20 bg-black/40 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+            <span class="mt-1 block text-xs text-slate-500">Dash, seats, wheels—helps us bring the right chemistry.</span>
+          </label>
+          <div class="text-xs text-slate-500">
+            Step 2 happens after we confirm: you’ll receive a $50 deposit link (applied to your invoice) and arrival window.
+          </div>
           <button type="submit" class="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white">Send request</button>
           <p class="text-xs text-slate-500">We reply via text/email with confirmation and deposit link. No spam.</p>
         </form>
