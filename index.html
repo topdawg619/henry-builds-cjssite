@@ -2,271 +2,294 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xact Auto Detailing | Modern Mockup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xact Auto Detailing | San Diego Mobile Detailing & Ceramic Coatings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              midnight: '#050816',
+              accent: '#3cf2c8',
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header class="hero" id="top">
-      <nav class="nav">
-        <div class="logo">XACT</div>
-        <div class="nav__cta">
-          <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#booking" class="btn btn--ghost">Get Quote</a>
-        </div>
-      </nav>
+  <body class="bg-midnight text-slate-100">
+    <header class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900/60 to-slate-950">
+      <div class="max-w-6xl mx-auto px-6 pt-8 pb-12 lg:pb-20">
+        <nav class="flex items-center justify-between">
+          <div class="text-lg tracking-[0.4em] font-semibold uppercase">XACT</div>
+          <div class="hidden md:flex items-center gap-6 text-sm uppercase tracking-wide text-slate-300">
+            <a href="#services" class="hover:text-white">Services</a>
+            <a href="#gallery" class="hover:text-white">Gallery</a>
+            <a href="#booking" class="hover:text-white">Book Now</a>
+          </div>
+          <a
+            href="tel:+16199220000"
+            class="inline-flex items-center gap-2 rounded-full border border-accent/70 px-4 py-2 text-sm font-semibold text-accent"
+          >
+            Call / Text CJ
+          </a>
+        </nav>
 
-      <div class="hero__content">
-        <p class="eyebrow">Mobile Detailing • San Diego County</p>
-        <h1>
-          Ceramic coatings, interior resets, and maintenance washes delivered to
-          your driveway.
-        </h1>
-        <p class="hero__sub">
-          On-site service for San Diego, Chula Vista, Eastlake, Poway, La Jolla &
-          beyond. Licensed, insured, and backed by 50+ five-star reviews.
-        </p>
-        <div class="hero__actions">
-          <a href="#booking" class="btn">Book Mobile Service</a>
-          <a href="tel:+16199220000" class="btn btn--ghost">Call / Text CJ</a>
+        <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Mobile Detailing • San Diego County</p>
+            <h1 class="mt-5 text-4xl font-semibold leading-tight text-white lg:text-5xl">
+              Ceramic coatings, interior resets, and maintenance washes delivered to your driveway.
+            </h1>
+            <p class="mt-6 text-lg text-slate-300">
+              Serving San Diego, Chula Vista, Eastlake, Poway & La Jolla with licensed, insured mobile service. 50+ five-star reviews and pro-grade products on every visit.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#booking"
+                class="rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-slate-900"
+                >Book Mobile Service</a
+              >
+              <a
+                href="mailto:info@xactdetailing.com"
+                class="rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white"
+                >Request Quote</a
+              >
+            </div>
+            <dl class="mt-10 grid gap-8 sm:grid-cols-3 text-center sm:text-left">
+              <div>
+                <dt class="text-sm text-slate-400">5-Star Reviews</dt>
+                <dd class="text-3xl font-semibold text-white">50+</dd>
+              </div>
+              <div>
+                <dt class="text-sm text-slate-400">On-Site Convenience</dt>
+                <dd class="text-3xl font-semibold text-white">100%</dd>
+              </div>
+              <div>
+                <dt class="text-sm text-slate-400">Protection</dt>
+                <dd class="text-3xl font-semibold text-white">3-6 Mo</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="relative">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-accent/20 to-fuchsia-500/10 blur-3xl"></div>
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+              alt="Mobile detailer polishing hood"
+              class="relative z-10 rounded-3xl shadow-2xl ring-1 ring-white/10"
+            />
+          </div>
         </div>
-        <div class="hero__stats">
-          <div>
-            <span>50+</span>
-            <p>5-star reviews</p>
-          </div>
-          <div>
-            <span>100%</span>
-            <p>On-site convenience</p>
-          </div>
-          <div>
-            <span>3-6 mo</span>
-            <p>Protection on every detail</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero__image">
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Detailer polishing hood"/>
       </div>
     </header>
 
-    <section class="badges">
-      <p>Trusted by commuters, collectors & busy families</p>
-      <div>
-        <span>Licensed & Insured</span>
-        <span>Mobile Service</span>
-        <span>Ceramic Specialist</span>
+    <section class="bg-slate-900/50 py-10">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Trusted by families, dealerships & fleet managers</p>
+        <div class="mt-6 grid gap-6 text-slate-300 sm:grid-cols-3">
+          <p>Licensed & Insured</p>
+          <p>Mobile Power & Water</p>
+          <p>Ceramic Ready</p>
+        </div>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <div class="section-heading">
-        <p class="eyebrow">Services</p>
-        <h2>Packages built for how you drive.</h2>
-        <p>
-          Transparent pricing, pro-grade products, and add-ons for pet hair,
-          sand, and high-use vehicles.
-        </p>
-      </div>
-      <div class="service-grid">
-        <article class="card">
-          <h3>Signature Full Detail</h3>
-          <p class="price">Starting at $250 · 4-7 hrs</p>
-          <ul>
-            <li>Deep interior reset with steam + hot water extraction</li>
-            <li>Hand wash, clay, iron decon, sealant + 3-6 month wax</li>
-            <li>Wheels, tires, glass, and dash UV protection</li>
-          </ul>
-          <p class="note">Best for quarterly resets & pre-sale refreshes.</p>
-          <a href="#booking" class="btn btn--small">Book this package</a>
-        </article>
-
-        <article class="card">
-          <h3>Interior Renewal</h3>
-          <p class="price">Starting at $160 · 2-4 hrs</p>
-          <ul>
-            <li>Vacuum + spot treat seats, mats, and cargo area</li>
-            <li>Steam clean plastics + leather conditioning</li>
-            <li>Dashboard + trim protectant with satin finish</li>
-          </ul>
-          <p class="note">Perfect for family haulers & ride-share vehicles.</p>
-          <a href="#booking" class="btn btn--small">Request interior detail</a>
-        </article>
-
-        <article class="card">
-          <h3>Exterior Protection</h3>
-          <p class="price">Starting at $120 · 1-2 hrs</p>
-          <ul>
-            <li>Dual bucket wash, clay mitt, and pH-neutral soap</li>
-            <li>Carnauba or spray sealant + tire & wheel treatment</li>
-            <li>Up to 6 months of beading and gloss</li>
-          </ul>
-          <p class="note">Keep daily drivers looking ceramic-slick.</p>
-          <a href="#booking" class="btn btn--small">Schedule exterior</a>
-        </article>
-
-        <article class="card">
-          <h3>Touch-Up Detail</h3>
-          <p class="price">Starting at $180 · 1-3 hrs</p>
-          <ul>
-            <li>Express wash, interior vacuum + wipe down</li>
-            <li>Spray sealant & tire shine</li>
-            <li>Ideal between full services</li>
-          </ul>
-          <p class="note">For well-maintained vehicles needing a quick polish.</p>
-          <a href="#booking" class="btn btn--small">Book touch-up</a>
-        </article>
-
-        <article class="card">
-          <h3>Platinum + Ceramic</h3>
-          <p class="price">Bespoke · 6-12 hrs</p>
-          <ul>
-            <li>1-step polish, iron removal, and paint correction</li>
-            <li>Headlight restore, engine bay detail, ceramic coating</li>
-            <li>Ozone treatment + interior steam reset</li>
-          </ul>
-          <p class="note">Request a custom quote for premium builds.</p>
-          <a href="#booking" class="btn btn--small">Discuss coating</a>
-        </article>
-
-        <article class="card card--accent">
-          <h3>Add-ons</h3>
-          <ul>
-            <li>Engine bay detail – from $65</li>
-            <li>Headlight restoration – from $65</li>
-            <li>Pet hair / sand / heavy soil – $45-75</li>
-          </ul>
-          <p class="note">
-            We’ll confirm add-ons during booking so there are no surprises.
+    <section id="services" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Services</p>
+          <h2 class="mt-4 text-3xl font-semibold text-white">Packages built for how you drive.</h2>
+          <p class="mt-3 text-lg text-slate-300">
+            Transparent pricing, pro-grade chemistry, and add-ons for pet hair, sand, and high-use vehicles.
           </p>
-        </article>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl bg-slate-900/60 p-8 ring-1 ring-white/5">
+            <h3 class="text-xl font-semibold text-white">Signature Full Detail</h3>
+            <p class="mt-2 text-sm text-slate-400">Starting at $250 • 4-7 hrs</p>
+            <ul class="mt-6 space-y-3 text-slate-300">
+              <li>Deep interior steam + hot water extraction</li>
+              <li>Hand wash, clay, iron decon & 3-6 mo sealant</li>
+              <li>Wheels, tires, glass, and dash UV protection</li>
+            </ul>
+            <p class="mt-6 text-sm text-slate-400">Best for quarterly resets & pre-sale refreshes.</p>
+            <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white"
+              >Book package</a
+            >
+          </article>
+          <article class="rounded-3xl bg-slate-900/60 p-8 ring-1 ring-white/5">
+            <h3 class="text-xl font-semibold text-white">Interior Renewal</h3>
+            <p class="mt-2 text-sm text-slate-400">Starting at $160 • 2-4 hrs</p>
+            <ul class="mt-6 space-y-3 text-slate-300">
+              <li>Vacuum + spot treat seats, mats & cargo</li>
+              <li>Steam clean plastics, leather conditioning</li>
+              <li>Dashboard + trim protectant</li>
+            </ul>
+            <p class="mt-6 text-sm text-slate-400">Perfect for family haulers & rideshare vehicles.</p>
+            <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white"
+              >Request interior</a
+            >
+          </article>
+          <article class="rounded-3xl bg-slate-900/60 p-8 ring-1 ring-white/5">
+            <h3 class="text-xl font-semibold text-white">Exterior Protection</h3>
+            <p class="mt-2 text-sm text-slate-400">Starting at $120 • 1-2 hrs</p>
+            <ul class="mt-6 space-y-3 text-slate-300">
+              <li>Dual bucket wash, clay mitt + sealant</li>
+              <li>Tire, wheel & trim dressing</li>
+              <li>Up to 6 months of gloss & beading</li>
+            </ul>
+            <p class="mt-6 text-sm text-slate-400">Keep daily drivers ceramic-slick between coatings.</p>
+            <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white"
+              >Schedule exterior</a
+            >
+          </article>
+        </div>
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl bg-slate-900/20 p-6 ring-1 ring-white/5">
+            <h4 class="text-white font-semibold">Touch-Up Detail</h4>
+            <p class="text-sm text-slate-400">Starting at $180 • 1-3 hrs</p>
+            <p class="mt-4 text-slate-300">Express wash, interior vacuum + wipe down, spray sealant, tire shine. Ideal between full services.</p>
+          </article>
+          <article class="rounded-3xl bg-slate-900/20 p-6 ring-1 ring-white/5">
+            <h4 class="text-white font-semibold">Platinum + Ceramic</h4>
+            <p class="text-sm text-slate-400">Custom • 6-12 hrs</p>
+            <p class="mt-4 text-slate-300">1-step polish, iron removal, ceramic coating, ozone treatment, headlight restore & engine bay detail.</p>
+          </article>
+          <article class="rounded-3xl bg-slate-900/20 p-6 ring-1 ring-white/5">
+            <h4 class="text-white font-semibold">Popular Add-ons</h4>
+            <ul class="mt-4 space-y-2 text-slate-300">
+              <li>Engine bay detail – from $65</li>
+              <li>Headlight restoration – from $65</li>
+              <li>Pet hair / sand / heavy soil – $45-75</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
-      <div class="section-heading">
-        <p class="eyebrow">Recent Work</p>
-        <h2>Proof that mobile can look showroom.</h2>
-      </div>
-      <div class="gallery-grid">
-        <img
-          src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80"
-          alt="Wheel detail on performance sedan"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=80"
-          alt="Exotic coupe exterior gloss"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80"
-          alt="Luxury leather interior detail"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=900&q=80"
-          alt="Supercar ceramic gloss"
-        />
+    <section id="gallery" class="bg-slate-900/40 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Recent Work</p>
+          <h2 class="mt-4 text-3xl font-semibold text-white">Proof that mobile can look showroom.</h2>
+        </div>
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <img
+            src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80"
+            alt="Wheel detail"
+            class="h-64 w-full rounded-3xl object-cover ring-1 ring-white/5"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80"
+            alt="Exotic coupe"
+            class="h-64 w-full rounded-3xl object-cover ring-1 ring-white/5"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80"
+            alt="Luxury interior detail"
+            class="h-64 w-full rounded-3xl object-cover ring-1 ring-white/5"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1200&q=80"
+            alt="Supercar ceramic gloss"
+            class="h-64 w-full rounded-3xl object-cover ring-1 ring-white/5"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="reviews">
-      <div class="section-heading">
-        <p class="eyebrow">Reviews</p>
-        <h2>50+ neighbors already trust CJ.</h2>
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Reviews</p>
+          <h2 class="mt-4 text-3xl font-semibold text-white">Clients who won’t use anyone else.</h2>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl bg-slate-900/60 p-6 ring-1 ring-white/5">
+            <p class="text-slate-200">“CJ restored our Model Y after a beach week—sand gone, interior smells new. Loved the text updates and punctuality.”</p>
+            <p class="mt-4 text-sm text-slate-400">— Kendra M., Chula Vista</p>
+          </article>
+          <article class="rounded-3xl bg-slate-900/60 p-6 ring-1 ring-white/5">
+            <p class="text-slate-200">“Booked the Platinum package before selling my Audi. Buyer thought it was garaged its entire life.”</p>
+            <p class="mt-4 text-sm text-slate-400">— Luis H., Poway</p>
+          </article>
+          <article class="rounded-3xl bg-slate-900/60 p-6 ring-1 ring-white/5">
+            <p class="text-slate-200">“Mobile ceramic coating was flawless. Water beads for months and CJ left maintenance notes.”</p>
+            <p class="mt-4 text-sm text-slate-400">— Nick P., San Diego</p>
+          </article>
+        </div>
       </div>
-      <div class="review-grid">
-        <article>
-          <p>
-            “CJ restored our Model Y after a beach week—sand gone, interior smells
-            new. Loved the text updates and punctuality.”
+    </section>
+
+    <section id="booking" class="bg-slate-900/60 py-20">
+      <div class="max-w-6xl mx-auto grid gap-10 px-6 lg:grid-cols-2">
+        <div>
+          <p class="text-sm uppercase tracking-[0.4em] text-slate-400">Book Mobile Detailing</p>
+          <h2 class="mt-4 text-3xl font-semibold text-white">Tell us about your ride.</h2>
+          <p class="mt-4 text-slate-300">
+            Same-day / next-day slots available. We confirm every request by text within 2 business hours.
           </p>
-          <span>— Kendra M., Chula Vista</span>
-        </article>
-        <article>
-          <p>
-            “Booked the Platinum package before selling my Audi. Buyer thought it
-            was garaged its entire life.”
-          </p>
-          <span>— Luis H., Poway</span>
-        </article>
-        <article>
-          <p>
-            “Mobile ceramic coating was flawless. Water beads for months and CJ
-            left maintenance notes.”
-          </p>
-          <span>— Nick P., San Diego</span>
-        </article>
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li>Licensed & insured mobile service</li>
+            <li>Power + water supplied if needed</li>
+            <li>Fleet & dealership pricing available</li>
+          </ul>
+        </div>
+        <form class="space-y-4 rounded-3xl bg-slate-950/80 p-8 ring-1 ring-white/5">
+          <label class="block text-sm font-medium text-slate-300">
+            Name
+            <input type="text" placeholder="Full name" class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+          </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Phone
+            <input type="tel" placeholder="(###) ###-####" class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+          </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Email
+            <input type="email" placeholder="you@email.com" class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+          </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Location / City
+            <input type="text" placeholder="Neighborhood or zip" class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent" />
+          </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Vehicle + Package
+            <select class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent">
+              <option>Signature Full Detail</option>
+              <option>Interior Renewal</option>
+              <option>Exterior Protection</option>
+              <option>Touch-Up Detail</option>
+              <option>Platinum + Ceramic</option>
+            </select>
+          </label>
+          <label class="block text-sm font-medium text-slate-300">
+            Message / Add-ons
+            <textarea rows="4" placeholder="Tell us about pet hair, coatings, special requests" class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+          </label>
+          <button type="submit" class="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-slate-900">Request availability</button>
+        </form>
       </div>
     </section>
 
-    <section class="booking" id="booking">
-      <div class="booking__content">
-        <p class="eyebrow">Book Mobile Detailing</p>
-        <h2>Tell us about your ride.</h2>
-        <p>
-          Same-day / next-day slots available. We confirm every request by text
-          within 2 business hours.
-        </p>
-        <ul>
-          <li>Licensed & insured mobile service</li>
-          <li>Power + water supplied if needed</li>
-          <li>Fleet & dealership pricing available</li>
-        </ul>
+    <footer class="border-t border-white/5 bg-slate-950/80 py-10 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h4 class="text-lg font-semibold text-white">Xact Auto Detailing</h4>
+        <p class="mt-2 text-slate-400">Mobile detailing & ceramic coatings • San Diego County</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-6 text-slate-300 text-sm">
+          <p>Call/Text: <a href="tel:+16199220000" class="text-accent">(619) 922-0000</a></p>
+          <p>Email: <a href="mailto:info@xactdetailing.com" class="text-accent">info@xactdetailing.com</a></p>
+          <p>Hours: Mon–Sat 8a-6p · Sun by appt</p>
+        </div>
+        <p class="mt-6 text-xs text-slate-500">© <span id="year"></span> Xact Auto Detailing. Licensed & insured.</p>
       </div>
-      <form class="booking__form">
-        <label>
-          Name
-          <input type="text" placeholder="Full name" required />
-        </label>
-        <label>
-          Phone
-          <input type="tel" placeholder="(###) ###-####" required />
-        </label>
-        <label>
-          Email
-          <input type="email" placeholder="you@email.com" />
-        </label>
-        <label>
-          Location / City
-          <input type="text" placeholder="Neighborhood or zip" required />
-        </label>
-        <label>
-          Vehicle + Package
-          <select>
-            <option value="signature">Signature Full Detail</option>
-            <option value="interior">Interior Renewal</option>
-            <option value="exterior">Exterior Protection</option>
-            <option value="touchup">Touch Up Detail</option>
-            <option value="platinum">Platinum + Ceramic</option>
-          </select>
-        </label>
-        <label>
-          Message / Add-ons
-          <textarea placeholder="Tell us about pet hair, coatings, special requests"></textarea>
-        </label>
-        <button type="submit" class="btn">Request availability</button>
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div>
-        <h4>Xact Auto Detailing</h4>
-        <p>Mobile detailing & ceramic coatings • San Diego County</p>
-      </div>
-      <div class="footer__contact">
-        <p>Call / Text: <a href="tel:+16199220000">(619) 922-0000</a></p>
-        <p>Email: <a href="mailto:info@xactdetailing.com">info@xactdetailing.com</a></p>
-        <p>Hours: Mon–Sat 8a–6p · Sun by appt</p>
-      </div>
-      <p class="footer__note">
-        © <span id="year"></span> Xact Auto Detailing. Licensed & insured. All rights reserved.
-      </p>
     </footer>
 
     <script src="js/main.js"></script>
