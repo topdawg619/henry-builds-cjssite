@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="grad-gameday" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#021b34" />
+      <stop offset="50%" stop-color="#043866" />
+      <stop offset="100%" stop-color="#0b99ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#grad-gameday)" />
+  <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="8">
+    <path d="M80 720 H1520" />
+    <path d="M80 660 H1520" />
+    <path d="M80 600 H1520" />
+  </g>
+  <circle cx="480" cy="520" r="180" fill="rgba(255,255,255,0.08)" />
+  <circle cx="1180" cy="520" r="180" fill="rgba(255,255,255,0.08)" />
+  <rect x="340" y="400" width="920" height="220" rx="110" stroke="rgba(255,255,255,0.3)" stroke-width="20" fill="none" />
+  <text x="800" y="470" text-anchor="middle" fill="#ffffff" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="68" letter-spacing="10">
+    GAME DAY GLOSS
+  </text>
+  <text x="800" y="555" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="32" letter-spacing="6">
+    BOOSTERS · DONOR RIDES · ATHLETICS
+  </text>
+</svg>

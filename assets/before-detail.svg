@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="grad-before" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d0c0c" />
+      <stop offset="100%" stop-color="#6b1f1f" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#grad-before)" />
+  <g stroke="rgba(0,0,0,0.4)" stroke-width="12" stroke-linecap="round">
+    <path d="M200 640 Q520 420 860 620" />
+    <path d="M240 700 Q600 460 980 690" />
+  </g>
+  <text x="800" y="420" text-anchor="middle" fill="#ffeded" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="72" letter-spacing="8">
+    BEFORE
+  </text>
+  <text x="800" y="500" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="34" letter-spacing="5">
+    ROAD FILM · WATER SPOTS · DUST
+  </text>
+</svg>

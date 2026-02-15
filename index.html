@@ -53,7 +53,7 @@
             <a href="#areas" class="hover:text-white">Service Area</a>
             <a href="#booking" class="hover:text-white">Book</a>
           </div>
-          <a href="tel:+16192462923" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+          <a href="tel:+16192462923" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent" data-analytics-event="contact" data-analytics-label="nav_call">
             Tap to Call
           </a>
         </nav>
@@ -68,8 +68,8 @@
               Ceramic coatings, paint correction, and interior resets delivered to your driveway with on-board power, water, and professional chemistries selected for SoCal salt air.
             </p>
             <div class="mt-8 flex flex-wrap gap-4">
-              <a href="#booking" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-glow">Book Mobile Detail</a>
-              <a href="#services" class="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white">View Packages</a>
+              <a href="#booking" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-glow" data-analytics-event="cta_click" data-analytics-label="hero_book">Book Mobile Detail</a>
+              <a href="#services" class="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white" data-analytics-event="cta_click" data-analytics-label="hero_packages">View Packages</a>
             </div>
             <div class="mt-10 grid gap-6 sm:grid-cols-3 text-center sm:text-left">
               <div>
@@ -168,15 +168,15 @@
               <li>• Wheels, glass, and trim protection available</li>
               <li>• 48-hour follow-up wash to lock the finish</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Schedule ceramic assessment</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="experience_ceramic">Schedule ceramic assessment</a>
           </div>
           <div class="order-1 lg:order-2">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Ceramic coating" class="h-80 w-full rounded-3xl object-cover" />
+            <img src="assets/ceramic.svg" alt="Ceramic coating" class="h-80 w-full rounded-3xl object-cover" />
           </div>
         </article>
         <article class="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <img src="https://images.unsplash.com/photo-1503731602430-514162fe6050?auto=format&fit=crop&w=1200&q=80" alt="Family interior" class="h-80 w-full rounded-3xl object-cover" />
+            <img src="assets/family-interior.svg" alt="Family interior" class="h-80 w-full rounded-3xl object-cover" />
           </div>
           <div>
             <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Family Reset Interior</p>
@@ -187,7 +187,7 @@
               <li>• Hypoallergenic leather + fabric protectant</li>
               <li>• Complimentary stroller or booster clean</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Reserve interior reset</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="experience_interior">Reserve interior reset</a>
           </div>
         </article>
         <article class="grid gap-8 lg:grid-cols-2 lg:items-center">
@@ -200,10 +200,10 @@
               <li>• Vinyl/number polishing and decal clean-up</li>
               <li>• Text alerts with before/after links for socials</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Get game day gloss</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="experience_game_day">Get game day gloss</a>
           </div>
           <div class="order-1 lg:order-2">
-            <img src="https://images.unsplash.com/photo-1529429617124-aee711a70412?auto=format&fit=crop&w=1200&q=80" alt="Game day detail" class="h-80 w-full rounded-3xl object-cover" />
+            <img src="assets/game-day.svg" alt="Game day detail" class="h-80 w-full rounded-3xl object-cover" />
           </div>
         </article>
       </div>
@@ -221,8 +221,8 @@
         <div class="mt-8 flex flex-col items-center gap-3 text-xs uppercase tracking-[0.3em] text-slate-400">
           <p>Billing preference</p>
           <div class="inline-flex rounded-full border border-white/10 p-1">
-            <button data-price-mode="standard" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-accent text-white shadow-glow">One-time service</button>
-            <button data-price-mode="member" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-transparent text-slate-300">Maintenance member (‑15%)</button>
+            <button data-price-mode="standard" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-accent text-white shadow-glow" data-analytics-event="price_mode" data-analytics-label="standard">One-time service</button>
+            <button data-price-mode="member" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-transparent text-slate-300" data-analytics-event="price_mode" data-analytics-label="member">Maintenance member (‑15%)</button>
           </div>
           <p class="text-[0.7rem] text-slate-500">Members lock pricing + priority scheduling. Pricing shown per visit.</p>
         </div>
@@ -284,7 +284,7 @@
               <li>Interior refresh & vacuum</li>
               <li>Glass + tire conditioning</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Join list</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="membership_monthly">Join list</a>
           </article>
           <article class="rounded-3xl border border-accent bg-black/80 p-8 shadow-glow">
             <p class="text-xs uppercase tracking-[0.4em] text-accent">Bi-Weekly · Popular</p>
@@ -295,7 +295,7 @@
               <li>Interior wipe down + dressing</li>
               <li>Seat & kid-zone spot care</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full bg-accent px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white">Reserve slot</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full bg-accent px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white" data-analytics-event="cta_click" data-analytics-label="membership_biweekly">Reserve slot</a>
           </article>
           <article class="rounded-3xl border border-white/10 bg-slateglass p-8">
             <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Weekly</p>
@@ -306,7 +306,7 @@
               <li>Wheel face + barrel clean</li>
               <li>Interior disinfect + mats</li>
             </ul>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Apply</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="membership_weekly">Apply</a>
           </article>
         </div>
         <div class="mt-16 grid gap-10 lg:grid-cols-[60%_auto]">
@@ -340,8 +340,149 @@
               <li><span class="text-accent font-semibold">3.</span> Baseline reset scheduled, then your cadence locks in.</li>
             </ol>
             <p class="mt-6 text-xs text-slate-500">Memberships require an active card on file & 30-day notice to pause.</p>
-            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Start the conversation</a>
+            <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="membership_contact">Start the conversation</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="bg-black/40 py-20">
+      <div class="max-w-6xl mx-auto grid gap-10 px-6 lg:grid-cols-[60%_auto]">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Process</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Concierge-level detail in 8 deliberate moves.</h2>
+          <p class="mt-4 text-slate-300">Borrowed from AMMO-style checklists and CJ's own SOPs—each minute is mapped so owners see exactly what happens in their driveway.</p>
+          <ol class="process-list mt-8 space-y-4">
+            <li>
+              <div class="time-pill">0-5 min</div>
+              <div>
+                <p class="step-title">Site prep &amp; shade check</p>
+                <p class="text-slate-300">Park vehicle out of direct sun, run power/water, tape delicate trim, capture intake photos.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">5-20 min</div>
+              <div>
+                <p class="step-title">Citrus pre-rinse + wheel detox</p>
+                <p class="text-slate-300">pH-balanced pre-soak, iron remover on barrels, detail brush around lugs, rinse top-down.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">20-35 min</div>
+              <div>
+                <p class="step-title">Two-bucket wash &amp; contact decon</p>
+                <p class="text-slate-300">Microfiber mitt, grit guards, and lubricated shampoo keep soft paint safe before clay and BOOST topper.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">35-45 min</div>
+              <div>
+                <p class="step-title">Drying pass</p>
+                <p class="text-slate-300">Forced-air blowers chase water out of trim; dedicated towels finish with lubrication so no towel marring.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">45-60 min</div>
+              <div>
+                <p class="step-title">Interior reset</p>
+                <p class="text-slate-300">Vacuum map, steam plastics, enzyme spot treating, leather nourishment, ozone on request.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">60-75 min</div>
+              <div>
+                <p class="step-title">Protection stack</p>
+                <p class="text-slate-300">Spray sealant or ceramic topper, glass polish, tire dressing tuned for your finish (satin, matte, gloss).</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">75-85 min</div>
+              <div>
+                <p class="step-title">Inspection &amp; documentation</p>
+                <p class="text-slate-300">Before/after photos, maintenance notes, filter log for memberships.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-pill">85+ min</div>
+              <div>
+                <p class="step-title">Client walkthrough</p>
+                <p class="text-slate-300">Texted media reel, in-person tour, and post-care plan so the gloss lasts.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-slateglass p-8">
+          <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Shop rules</p>
+          <h3 class="mt-3 text-2xl font-semibold text-white">CJ's detailing commandments</h3>
+          <ul class="mt-6 space-y-4 text-sm text-slate-200">
+            <li><span class="step-title">Never dry bare.</span> Microfiber + lubrication or nothing.</li>
+            <li><span class="step-title">Ceramic-safe chemistry only.</span> Every shampoo and degreaser is checked against your coating before it's opened.</li>
+            <li><span class="step-title">Hands-off interiors.</span> Gloves, fresh towels, and ozone filtration keep cabins hypoallergenic.</li>
+            <li><span class="step-title">Documentation or it didn’t happen.</span> Membership logs capture every product used, so you always know what’s on the paint.</li>
+          </ul>
+          <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="process_book">Book the process</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" class="py-20 bg-black/70">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Trust Center</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Insurance-backed, background-checked, documented.</h2>
+          <p class="mt-4 text-slate-300">Modeled after the Thumbtack / Handy / ServiceTitan safety stacks—here’s exactly how Xact protects your home, your data, and your vehicles.</p>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 trust-grid">
+          <article class="trust-card">
+            <p class="badge">COI on file</p>
+            <h3>Licensed &amp; insured</h3>
+            <p>General liability + garage keepers coverage, $1M aggregate, certificates available for HOAs, fleet yards, and venues within 24 hours.</p>
+          </article>
+          <article class="trust-card">
+            <p class="badge">Background-check partners</p>
+            <h3>Screened technicians</h3>
+            <p>Every tech is identity-verified and background-checked annually via Checkr equivalents—photo ID + DMV review before they touch your keys.</p>
+          </article>
+          <article class="trust-card">
+            <p class="badge">$2,500 guarantee</p>
+            <h3>White-Glove Promise</h3>
+            <p>If something isn’t right, we return within 48 hours or cover up to $2,500 in make-right costs. Rain-checks are automatic within 24 hours of bad weather.</p>
+          </article>
+          <article class="trust-card">
+            <p class="badge">Data safe</p>
+            <h3>Privacy-first bookings</h3>
+            <p>Booking forms live on encrypted infrastructure, payment links leverage Stripe, and we never reuse your content to train outside systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="py-20 bg-black/60">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Stories</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Proof woven from Topaz- and AMMO-level journeys.</h2>
+          <p class="mt-4 text-slate-300">We borrowed storytelling cues from Topaz Detailing timelines, AMMO NYC playbooks, and Detailer’s Domain reviews so San Diego owners can feel the craftsmanship before we arrive.</p>
+        </div>
+        <div class="stories-grid mt-12 grid gap-6 md:grid-cols-3">
+          <article class="story-card">
+            <p class="badge">Timeline</p>
+            <h3>Garage-to-concierge arc</h3>
+            <p>Like Topaz’s Naamo brothers, CJ started in a family driveway—logging every job, every mistake, every win. Today that log powers QR-linked maintenance history for each member vehicle.</p>
+            <p class="meta">2009 → Present</p>
+          </article>
+          <article class="story-card">
+            <p class="badge">Process</p>
+            <h3>AMMO-style SOPs</h3>
+            <p>Our 15-step exterior + 8-step interior routine mirrors Larry Kosilla’s methodical guides—complete with minute markers, chemistry notes, and post-care checklists you can download.</p>
+            <p class="meta">60+ minutes documented</p>
+          </article>
+          <article class="story-card">
+            <p class="badge">Owners</p>
+            <h3>“They treated my GT4 like their own.”</h3>
+            <p>“Months of research led me here—CJ’s team filmed the whole PPF + ceramic process so I knew the investment was safe.” – Devin G., La Jolla.</p>
+            <p class="meta">Google review · 5.0 ★</p>
+          </article>
         </div>
       </div>
     </section>
@@ -381,8 +522,8 @@
           <p class="mt-4 text-slate-300">Slide to compare CJ’s correction + ceramic workflow on a black Escalade.</p>
         </div>
         <div class="before-after relative overflow-hidden rounded-3xl">
-          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80" alt="Before detail" class="before-image" />
-          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="After detail" class="after-image" />
+          <img src="assets/before-detail.svg" alt="Before detail" class="before-image" />
+          <img src="assets/after-detail.svg" alt="After detail" class="after-image" />
           <div class="slider-handle" id="sliderHandle"></div>
           <input type="range" min="0" max="100" value="50" class="slider" id="sliderRange" aria-label="Before and after slider" />
         </div>
@@ -443,7 +584,7 @@
             <li><span class="text-accent font-semibold">Plan</span> — We deliver a tiered quote, insurance docs, and scheduling portal.</li>
             <li><span class="text-accent font-semibold">On-site day</span> — Crew arrives branded with mats, cones, and text alerts to captains.</li>
           </ol>
-          <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]">Request fleet plan</a>
+          <a href="#booking" class="mt-6 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em]" data-analytics-event="cta_click" data-analytics-label="fleet_plan">Request fleet plan</a>
         </div>
       </div>
     </section>
@@ -480,8 +621,8 @@
         <h2 class="text-3xl font-semibold text-white">Need us on-site before first bell or kick-off?</h2>
         <p class="text-slate-300">Text us photos for a same-day quote or lock a slot right now. Licensed, insured, and fully mobile across San Diego County.</p>
         <div class="flex flex-wrap justify-center gap-4">
-          <a href="#booking" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white">Book detail</a>
-          <a href="sms:+16192462923" class="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white">Text CJ</a>
+          <a href="#booking" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white" data-analytics-event="cta_click" data-analytics-label="cta_band_book">Book detail</a>
+          <a href="sms:+16192462923" class="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white" data-analytics-event="contact" data-analytics-label="cta_band_text">Text CJ</a>
         </div>
         <p class="text-xs text-slate-500">Average response 11 minutes · COI + references available on request.</p>
       </div>
@@ -565,15 +706,21 @@
         <h4 class="text-lg font-semibold text-white">Xact Auto Detailing</h4>
         <p class="mt-2 text-slate-300">Mobile detailing & ceramic coatings • San Diego County</p>
         <div class="mt-6 flex flex-wrap justify-center gap-6 text-slate-300 text-sm">
-          <p>Call/Text: <a href="tel:+16192462923" class="text-accent">1 (619) 246-2923</a></p>
-          <p>Email: <a href="mailto:info@xactdetailing.com" class="text-accent">info@xactdetailing.com</a></p>
+          <p>Call/Text: <a href="tel:+16192462923" class="text-accent" data-analytics-event="contact" data-analytics-label="footer_call">1 (619) 246-2923</a></p>
+          <p>Email: <a href="mailto:info@xactdetailing.com" class="text-accent" data-analytics-event="contact" data-analytics-label="footer_email">info@xactdetailing.com</a></p>
           <p>Hours: Mon–Sat 8a-6p · Sun by appt</p>
         </div>
         <p class="mt-6 text-xs text-slate-500">© <span id="year"></span> Xact Auto Detailing. Licensed & insured.</p>
       </div>
     </footer>
 
-    <a href="sms:+16192462923" class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
+    <div class="sticky-cta">
+      <a href="tel:+16192462923" data-analytics-event="contact" data-analytics-label="sticky_call">Call CJ</a>
+      <a href="sms:+16192462923" data-analytics-event="contact" data-analytics-label="sticky_text">Text CJ</a>
+      <a href="#booking" data-analytics-event="cta_click" data-analytics-label="sticky_book">Book detail</a>
+    </div>
+
+    <a href="sms:+16192462923" class="fixed bottom-6 right-6 z-40 hidden md:inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg" data-analytics-event="contact" data-analytics-label="floating_text">
       Tap to text CJ
     </a>
 

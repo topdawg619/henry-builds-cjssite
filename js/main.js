@@ -29,6 +29,23 @@ if (slider && afterImage && handle) {
   updateSlider(slider.value);
 }
 
+
+const trackEvent = (eventName, label = null, payload = {}) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    label,
+    ...payload,
+    timestamp: Date.now(),
+  });
+};
+
+document.querySelectorAll('[data-analytics-event]').forEach((el) => {
+  el.addEventListener('click', () => {
+    trackEvent(el.dataset.analyticsEvent, el.dataset.analyticsLabel || null);
+  });
+});
+
 // price estimator + table sync
 const estimateEl = document.getElementById('estimate');
 const sizeSelect = document.getElementById('vehicleSize');
@@ -98,6 +115,7 @@ if (priceToggleButtons.length) {
       priceMode = btn.dataset.priceMode;
       setActiveToggle();
       updateTablePrices();
+      trackEvent('price_mode', btn.dataset.analyticsLabel || priceMode);
     });
   });
   setActiveToggle();
