@@ -62,10 +62,10 @@
           <div>
             <p class="text-xs uppercase tracking-[0.6em] text-slate-400">Licensed · Insured · IDA Member</p>
             <h1 class="mt-6 text-4xl font-semibold leading-tight text-white lg:text-6xl">
-              San Diego’s mobile detailing concierge for families, fleets, and performance garages.
+              Precision rituals for vehicles that can’t afford second chances.
             </h1>
             <p class="mt-6 text-lg text-slate-300">
-              Ceramic coatings, paint correction, and interior resets delivered to your driveway with on-board power, water, and professional chemistries selected for SoCal salt air.
+              24-stage exterior + interior choreography, ceramic systems, and concierge documentation—delivered curbside with power, water, and chemistry tuned for San Diego salt air.
             </p>
             <div class="mt-8 flex flex-wrap gap-4">
               <a href="#booking" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-glow" data-analytics-event="cta_click" data-analytics-label="hero_book">Book Mobile Detail</a>
@@ -97,6 +97,23 @@
               <div class="flex items-center gap-2">
                 <span class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/30 text-[0.65rem]">24h</span>
                 <span>Rain-check guarantee</span>
+              </div>
+            </div>
+            <div class="mt-8 grid gap-4 md:grid-cols-3">
+              <div class="stat-badge">
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Signal stack</p>
+                <p class="text-lg font-semibold text-white">98% repeat clients</p>
+                <p class="text-sm text-slate-400">Families, collectors, and fleet managers across San Diego County.</p>
+              </div>
+              <div class="stat-badge">
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Documented</p>
+                <p class="text-lg font-semibold text-white">Every product + panel logged</p>
+                <p class="text-sm text-slate-400">QR reports, COIs, and before/after reels with each visit.</p>
+              </div>
+              <div class="stat-badge">
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Proof</p>
+                <p class="text-lg font-semibold text-white">“CJ treats our GT4 like his own.”</p>
+                <p class="text-sm text-slate-400">Devin G. · La Jolla | Rain-check + $2,500 White-Glove Promise.</p>
               </div>
             </div>
           </div>
@@ -147,6 +164,49 @@
           <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Guarantee</p>
           <h4 class="mt-3 text-xl font-semibold text-white">White-Glove Promise</h4>
           <p class="mt-3 text-sm text-slate-300">On-time arrival + satisfaction guarantee or the next visit is on us.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="concierge-planner" class="py-20 bg-black/70">
+      <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-[55%_auto] lg:items-center">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Concierge calculator</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Estimate the ritual before we roll.</h2>
+          <p class="mt-4 text-slate-300">Drag the slider, pick a cadence, and see how memberships flex for daily drivers, garages, or full fleets. Every plan includes documentation, rain-checks, and photo logs.</p>
+          <ul class="mt-8 space-y-4 text-sm text-slate-300">
+            <li class="flex items-start gap-3"><span class="stat-dot"></span><span>Members average <strong class="text-white">11-minute</strong> response times with direct text support.</span></li>
+            <li class="flex items-start gap-3"><span class="stat-dot"></span><span>Fleet add-ons unlock on-site keysafes, crew manifests, and COIs for each property.</span></li>
+            <li class="flex items-start gap-3"><span class="stat-dot"></span><span>Switch cadences anytime—bi-weekly rituals are our most requested pattern.</span></li>
+          </ul>
+        </div>
+        <div class="calculator-card rounded-3xl border border-white/10 bg-zinc-950/70 p-8 shadow-[0_35px_80px_rgba(0,0,0,0.45)]">
+          <div class="flex items-center justify-between">
+            <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Vehicles</p>
+            <p class="text-xs text-slate-400" id="calcVehiclesValue">2 vehicles</p>
+          </div>
+          <input type="range" min="1" max="6" value="2" id="calcVehicles" class="w-full mt-4 calculator-range" />
+          <div class="mt-8 flex items-center justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Cadence</p>
+              <p class="text-sm text-white" id="calcPlanLabel">Bi-weekly ritual</p>
+            </div>
+            <div class="frequency-toggle inline-flex rounded-full border border-white/10 p-1">
+              <button type="button" data-frequency="monthly" class="frequency-btn">Monthly</button>
+              <button type="button" data-frequency="biweekly" class="frequency-btn">Bi-weekly</button>
+              <button type="button" data-frequency="weekly" class="frequency-btn">Weekly</button>
+            </div>
+          </div>
+          <div class="mt-8 rounded-2xl border border-white/10 bg-black/40 p-6">
+            <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Projected investment</p>
+            <p class="mt-3 text-3xl font-semibold text-white" id="calcEstimate">$420</p>
+            <p class="text-sm text-slate-400" id="calcSummary">4 visits / month · Bi-weekly ritual</p>
+          </div>
+          <div class="mt-6 grid gap-4 text-xs text-slate-400 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/5 bg-black/20 p-3">Avg arrival window <strong class="text-white">90 minutes</strong></div>
+            <div class="rounded-2xl border border-white/5 bg-black/20 p-3">White-Glove Promise <strong class="text-white">$2,500</strong></div>
+          </div>
+          <a href="#booking" class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white" data-analytics-event="cta_click" data-analytics-label="calculator_cta">Send plan to CJ</a>
         </div>
       </div>
     </section>
@@ -213,56 +273,109 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center">
           <p class="text-xs uppercase tracking-[0.5em] text-slate-400">Packages</p>
-          <h2 class="mt-3 text-3xl font-semibold text-white">Choose the level that fits your drive.</h2>
-          <p class="mt-4 text-lg text-slate-300">
-            Pricing flexes by vehicle size. Use the toggle to see one-time vs. maintenance member rates or text us photos for a concierge quote.
-          </p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Pick the ritual that matches your drive.</h2>
+          <p class="mt-4 text-lg text-slate-300">Every tier includes COI coverage, documentation, and rain-checks. Toggle between one-time resets and member pricing.</p>
         </div>
         <div class="mt-8 flex flex-col items-center gap-3 text-xs uppercase tracking-[0.3em] text-slate-400">
           <p>Billing preference</p>
           <div class="inline-flex rounded-full border border-white/10 p-1">
-            <button data-price-mode="standard" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-accent text-white shadow-glow" data-analytics-event="price_mode" data-analytics-label="standard">One-time service</button>
-            <button data-price-mode="member" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-transparent text-slate-300" data-analytics-event="price_mode" data-analytics-label="member">Maintenance member (‑15%)</button>
+            <button data-price-mode="standard" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-accent text-white shadow-glow" data-analytics-event="price_mode" data-analytics-label="standard">One-time reset</button>
+            <button data-price-mode="member" class="price-toggle rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] bg-transparent text-slate-300" data-analytics-event="price_mode" data-analytics-label="member">Member (‑15%)</button>
           </div>
-          <p class="text-[0.7rem] text-slate-500">Members lock pricing + priority scheduling. Pricing shown per visit.</p>
+          <p class="text-[0.7rem] text-slate-500">Tap any card for full inclusions or text us photos for a concierge quote.</p>
         </div>
-        <div class="mt-12 overflow-hidden rounded-3xl border border-white/10">
-          <table class="min-w-full text-left text-sm text-slate-200">
-            <thead class="bg-black/70 text-xs uppercase tracking-[0.3em] text-slate-400">
-              <tr>
-                <th class="px-4 py-4">Package</th>
-                <th class="px-4 py-4">Includes</th>
-                <th class="px-4 py-4">Sedan</th>
-                <th class="px-4 py-4">SUV/Truck</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-white/5 bg-black/40">
-              <tr>
-                <td class="px-4 py-6 font-semibold text-white">Signature Full Detail</td>
-                <td class="px-4 py-6 text-slate-300">Steam interior reset, hot water extraction, clay + iron decon, 6-mo sealant, wheels/tires, glass.</td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="signature" data-size="sedan">$320</span></td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="signature" data-size="suv">$380</span></td>
-              </tr>
-              <tr>
-                <td class="px-4 py-6 font-semibold text-white">Interior Renewal</td>
-                <td class="px-4 py-6 text-slate-300">Deep vacuum, stain treatment, steam plastics, leather reconditioning, ozone deodorize (optional).</td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="interior" data-size="sedan">$210</span></td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="interior" data-size="suv">$260</span></td>
-              </tr>
-              <tr>
-                <td class="px-4 py-6 font-semibold text-white">Exterior Protection</td>
-                <td class="px-4 py-6 text-slate-300">Two-bucket wash, clay mitt, single-stage polish, 6-mo ceramic spray, trim & tire dressing.</td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="exterior" data-size="sedan">$190</span></td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="exterior" data-size="suv">$240</span></td>
-              </tr>
-              <tr>
-                <td class="px-4 py-6 font-semibold text-white">Ceramic + Correction</td>
-                <td class="px-4 py-6 text-slate-300">Two-step correction, SB3 Alpha 2-year coating, glass + wheel coating add-on, maintenance kit.</td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="ceramic" data-size="sedan">$950</span></td>
-                <td class="px-4 py-6 text-white font-medium"><span data-package="ceramic" data-size="suv">$1,150</span></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="pricing-card is-featured">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Daily driver</p>
+                <h3 class="mt-2 text-2xl font-semibold text-white">Signature Reset</h3>
+              </div>
+              <span class="pricing-chip">Most booked</span>
+            </div>
+            <p class="mt-4 text-slate-300">Full exterior + interior ritual: steam decon, iron removal, 6-month sealant, wheels/tires, and glass polish.</p>
+            <div class="mt-6 flex gap-6 text-white">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Sedan</p>
+                <p class="text-2xl font-semibold"><span data-package="signature" data-size="sedan">$320</span></p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">SUV/Truck</p>
+                <p class="text-2xl font-semibold"><span data-package="signature" data-size="suv">$380</span></p>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-2 text-sm text-slate-200">
+              <li>• 24-stage wash + interior choreography</li>
+              <li>• Digital photo log + care kit</li>
+              <li>• Rain-check guarantee within 24h</li>
+            </ul>
+            <a href="#booking" class="mt-8 inline-flex rounded-full bg-accent px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white w-full justify-center" data-analytics-event="cta_click" data-analytics-label="pricing_signature">Book Signature Reset</a>
+          </article>
+          <article class="pricing-card">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Family interior</p>
+                <h3 class="mt-2 text-2xl font-semibold text-white">Interior Renewal</h3>
+              </div>
+              <span class="pricing-chip">SOS ready</span>
+            </div>
+            <p class="mt-4 text-slate-300">Deep vacuum, enzyme spot treatment, HEPA steam detail, and ozone deodorizing for spills, pets, and beach life.</p>
+            <div class="mt-6 flex gap-6 text-white">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Sedan</p>
+                <p class="text-2xl font-semibold"><span data-package="interior" data-size="sedan">$210</span></p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">SUV/Truck</p>
+                <p class="text-2xl font-semibold"><span data-package="interior" data-size="suv">$260</span></p>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-2 text-sm text-slate-200">
+              <li>• Steam plastics + hypoallergenic protectants</li>
+              <li>• Complimentary stroller/booster clean</li>
+              <li>• Ozone or enzyme treatments on request</li>
+            </ul>
+            <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white w-full justify-center" data-analytics-event="cta_click" data-analytics-label="pricing_interior">Reserve Interior Renewal</a>
+          </article>
+          <article class="pricing-card">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs uppercase tracking-[0.4em] text-slate-400">Collections & fleet</p>
+                <h3 class="mt-2 text-2xl font-semibold text-white">Ceramic + Correction</h3>
+              </div>
+              <span class="pricing-chip">Show car</span>
+            </div>
+            <p class="mt-4 text-slate-300">Two-step paint correction, SB3 Alpha coating, glass/trim add-ons, and maintenance kit with QR-based care instructions.</p>
+            <div class="mt-6 flex gap-6 text-white">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Sedan</p>
+                <p class="text-2xl font-semibold"><span data-package="ceramic" data-size="sedan">$950</span></p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">SUV/Truck</p>
+                <p class="text-2xl font-semibold"><span data-package="ceramic" data-size="suv">$1,150</span></p>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-2 text-sm text-slate-200">
+              <li>• Gloss meter reports + defect logs</li>
+              <li>• Portable curing lights & climate-controlled cure</li>
+              <li>• Aftercare coaching + membership priority</li>
+            </ul>
+            <a href="#booking" class="mt-8 inline-flex rounded-full border border-white/30 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white w-full justify-center" data-analytics-event="cta_click" data-analytics-label="pricing_ceramic">Schedule coating consult</a>
+          </article>
+        </div>
+        <div class="mt-12 rounded-3xl border border-white/10 bg-black/70 p-6 lg:p-8">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p class="text-sm text-slate-300">“CJ’s crew documents every visit down to the product batch number. When we traded in our Escalade, the dealer called the maintenance log ‘the cleanest they’d seen.’”</p>
+              <p class="mt-2 text-xs uppercase tracking-[0.3em] text-slate-500">Luis · Poway · Ceramic + Maintenance member</p>
+            </div>
+            <div class="flex flex-wrap gap-3 text-xs text-slate-400">
+              <span class="badge-outline">SB3 Certified</span>
+              <span class="badge-outline">$2,500 White-Glove Promise</span>
+              <span class="badge-outline">COI turnaround &lt;24h</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

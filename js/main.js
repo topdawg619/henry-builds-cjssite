@@ -127,3 +127,55 @@ if (sizeSelect && packageSelect) {
   packageSelect.addEventListener('change', updateEstimate);
   updateEstimate();
 }
+
+const vehicleSlider = document.getElementById('calcVehicles');
+const vehiclesLabel = document.getElementById('calcVehiclesValue');
+const planLabel = document.getElementById('calcPlanLabel');
+const calcEstimateEl = document.getElementById('calcEstimate');
+const calcSummaryEl = document.getElementById('calcSummary');
+const frequencyButtons = document.querySelectorAll('[data-frequency]');
+
+const frequencyMap = {
+  monthly: { label: 'Monthly reset', visitsPerMonth: 1, rate: 119 },
+  biweekly: { label: 'Bi-weekly ritual', visitsPerMonth: 2, rate: 105 },
+  weekly: { label: 'Weekly collection care', visitsPerMonth: 4, rate: 95 },
+};
+
+let activeFrequency = 'biweekly';
+
+const updateFrequencyButtons = () => {
+  frequencyButtons.forEach((btn) => {
+    const isActive = btn.dataset.frequency === activeFrequency;
+    btn.classList.toggle('active', isActive);
+  });
+};
+
+const updateCalculator = () => {
+  if (!vehicleSlider) return;
+  const meta = frequencyMap[activeFrequency];
+  if (!meta) return;
+  const vehicles = Number(vehicleSlider.value) || 1;
+  const visitsPerMonth = vehicles * meta.visitsPerMonth;
+  const monthlyInvestment = vehicles * meta.rate * meta.visitsPerMonth;
+  if (vehiclesLabel) vehiclesLabel.textContent = vehicles === 1 ? '1 vehicle' : `${vehicles} vehicles`;
+  if (planLabel) planLabel.textContent = meta.label;
+  if (calcEstimateEl) calcEstimateEl.textContent = `$${monthlyInvestment.toLocaleString()}`;
+  if (calcSummaryEl) calcSummaryEl.textContent = `${visitsPerMonth} visits / month · ${meta.label}`;
+};
+
+if (vehicleSlider && frequencyButtons.length) {
+  vehicleSlider.addEventListener('input', () => {
+    updateCalculator();
+    trackEvent('calc_vehicle', vehicleSlider.value);
+  });
+  frequencyButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      activeFrequency = btn.dataset.frequency;
+      updateFrequencyButtons();
+      updateCalculator();
+      trackEvent('calc_frequency', btn.dataset.frequency);
+    });
+  });
+  updateFrequencyButtons();
+  updateCalculator();
+}
